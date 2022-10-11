@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  background-color: #06283d;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+p {
+  color: white;
+}
+
+hr {
+  border-style: dotted;
+  color: black;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", cursive;
+  color: white;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.top-container {
+  background-color: #04042b;
+  position: relative;
+  padding-top: 10rem;
+}
+
+.pro {
+  text-decoration: underline;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+.profile-img {
+  width: 15%;
+  border-radius: 100%;
+}
+
+.skill-row {
+  line-height: 2;
+  text-align: left;
+  width: 25%;
+  margin: 100px auto;
+}
+
+.skill-img {
+  width: 40%;
+  border-radius: 100%;
+  float: left;
+  margin-right: 30px;
+}
+.skill-img2 {
+  width: 40%;
+  border-radius: 100%;
+  float: right;
+  margin-left: 30px;
+}
+
+.footer-link {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+.bottom-container {
+  background-color: #a7271d;
+  margin-top: 2rem;
+  line-height: 2;
+}
+.contact-me {
+  margin-top: 1rem;
+  line-height: 2;
+}
+
+footer {
+  margin-left: 1rem;
+  color: #eaf6f6;
+}
+
+/*snow */
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snow,
+.snow:before,
+.snow:after {
+  position: absolute;
+  top: -650px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent),
+    radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent),
+    radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent),
+    radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent),
+    radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent),
+    radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent),
+    radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+  background-size: 650px 650px;
+  animation: snow 3s linear infinite;
+  content: "";
+}
+
+.snow:after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-duration: 6s;
+  animation-direction: reverse;
+}
+
+.snow:before {
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-duration: 9s;
+  animation-direction: reverse;
+}
+
+@keyframes snow {
+  to {
+    transform: translateY(650px);
+  }
+}
